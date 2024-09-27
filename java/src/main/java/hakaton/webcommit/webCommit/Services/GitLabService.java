@@ -19,7 +19,7 @@ import java.util.List;
 @Service
 public class GitLabService {
     private static final String GITLAB_API_URL = "https://gitlab.com/api/v4";
-    private static final String ACCESS_TOKEN = "glpat-qWD4tem2tKMizTrVJyb6";
+    private static final String ACCESS_TOKEN = "as";
 
     //@Autowired private RestTemplate restTemplate;
 
