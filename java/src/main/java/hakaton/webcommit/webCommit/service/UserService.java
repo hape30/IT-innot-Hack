@@ -1,10 +1,10 @@
-package hakaton.webcommit.webCommit.Services;
+package hakaton.webcommit.webCommit.service;
 
 
-import hakaton.webcommit.webCommit.Entities.User;
-import hakaton.webcommit.webCommit.Entities.dto.UserInfo;
-import hakaton.webcommit.webCommit.Entities.dto.UserRequest;
-import hakaton.webcommit.webCommit.Repositories.UserRepository;
+import hakaton.webcommit.webCommit.entity.User;
+import hakaton.webcommit.webCommit.entity.dto.UserInfo;
+import hakaton.webcommit.webCommit.entity.dto.UserRequest;
+import hakaton.webcommit.webCommit.repository.UserRepository;
 import hakaton.webcommit.webCommit.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

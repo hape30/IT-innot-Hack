@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Entities;
+package hakaton.webcommit.webCommit.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -15,9 +15,6 @@ public class Group {
     @Column(name="name")
     private String name;
 
-
-
-
-
-
+    @Column(name = "type")
+    private String type;
 }

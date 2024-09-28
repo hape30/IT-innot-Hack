@@ -1,6 +1,6 @@
-package hakaton.webcommit.webCommit.Repositories;
+package hakaton.webcommit.webCommit.repository;
 
-import hakaton.webcommit.webCommit.Entities.User;
+import hakaton.webcommit.webCommit.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

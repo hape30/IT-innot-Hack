@@ -1,8 +1,8 @@
-package hakaton.webcommit.webCommit.Controllers;
+package hakaton.webcommit.webCommit.controller;
 
-import hakaton.webcommit.webCommit.Entities.dto.UserInfo;
-import hakaton.webcommit.webCommit.Entities.dto.UserRequest;
-import hakaton.webcommit.webCommit.Services.UserService;
+import hakaton.webcommit.webCommit.entity.dto.UserInfo;
+import hakaton.webcommit.webCommit.entity.dto.UserRequest;
+import hakaton.webcommit.webCommit.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

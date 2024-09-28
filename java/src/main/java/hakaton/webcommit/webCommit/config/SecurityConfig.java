@@ -1,5 +1,6 @@
-package hakaton.webcommit.webCommit.Configurations;
+package hakaton.webcommit.webCommit.config;
 
+import hakaton.webcommit.webCommit.repository.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -35,7 +36,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public UserDetailsService userDetailsService(hakaton.webcommit.webCommit.Repositories.UserRepository userRepository) {
+    public UserDetailsService userDetailsService(UserRepository userRepository) {
         return (username) -> userRepository.findByEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
     }

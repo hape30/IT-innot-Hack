@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Entities;
+package hakaton.webcommit.webCommit.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

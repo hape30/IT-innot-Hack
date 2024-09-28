@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Controllers.advice;
+package hakaton.webcommit.webCommit.controller.advice;
 
 import hakaton.webcommit.webCommit.exception.*;
 import jakarta.validation.ConstraintViolation;

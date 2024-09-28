@@ -1,7 +1,6 @@
-package hakaton.webcommit.webCommit.Entities;
+package hakaton.webcommit.webCommit.entity;
 
 
-import hakaton.webcommit.webCommit.Entities.Enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
@@ -9,9 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "App_user")

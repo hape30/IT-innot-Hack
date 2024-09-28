@@ -1,6 +1,6 @@
-package hakaton.webcommit.webCommit.Repositories;
+package hakaton.webcommit.webCommit.repository;
 
-import hakaton.webcommit.webCommit.Entities.ConfirmationToken;
+import hakaton.webcommit.webCommit.entity.ConfirmationToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ConfirmationTokenRepository extends JpaRepository<ConfirmationToken, Long> {

@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Entities.dto;
+package hakaton.webcommit.webCommit.entity.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

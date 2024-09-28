@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Entities.Enums;
+package hakaton.webcommit.webCommit.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 

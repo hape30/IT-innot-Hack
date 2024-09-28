@@ -1,4 +1,4 @@
-package hakaton.webcommit.webCommit.Services;
+package hakaton.webcommit.webCommit.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.MailSender;
