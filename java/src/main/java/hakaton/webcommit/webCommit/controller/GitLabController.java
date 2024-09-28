@@ -1,6 +1,7 @@
 package hakaton.webcommit.webCommit.controller;
 
 import hakaton.webcommit.webCommit.service.GitLabService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/gitlab")
+@SecurityRequirement(name = "SessionAuth")
 public class GitLabController {
 
     @Autowired
