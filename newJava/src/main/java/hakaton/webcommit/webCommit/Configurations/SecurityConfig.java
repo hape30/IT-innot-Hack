@@ -14,42 +14,42 @@ import org.springframework.web.client.RestTemplate;
 
 
 @Configuration
-@EnableWebSecurity
+//@EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
 
 
-    @Bean
-    protected SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
+//    @Bean
+//    protected SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http
+//
+//                .authorizeHttpRequests((requests) -> requests
+//                        .requestMatchers("/", "/registration", "/confirm-account", "/static/**").permitAll()
+//                        .requestMatchers("/userlist/**", "/youngStudents/**", "/sortByName/**"
+//                                , "/notFound/**", "findByEmail", "/emptyNumber/**",
+//                                "/endingStudents/**")
+//                        .hasAnyAuthority("ROLE_ADMIN", "ROLE_USER")
+//                        .requestMatchers("/generate/**").hasAnyAuthority("ROLE_ADMIN")
+//                        .anyRequest().authenticated()
+//                )
+//                .formLogin((form) -> form
+//                        .loginPage("/login")
+//                        .permitAll()
+//                )
+//                .logout((logout) -> logout.permitAll());
+//
+//        return http.build();
+//    }
 
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/", "/registration", "/confirm-account", "/static/**").permitAll()
-                        .requestMatchers("/userlist/**", "/youngStudents/**", "/sortByName/**"
-                                , "/notFound/**", "findByEmail", "/emptyNumber/**",
-                                "/endingStudents/**")
-                        .hasAnyAuthority("ROLE_ADMIN", "ROLE_USER")
-                        .requestMatchers("/generate/**").hasAnyAuthority("ROLE_ADMIN")
-                        .anyRequest().authenticated()
-                )
-                .formLogin((form) -> form
-                        .loginPage("/login")
-                        .permitAll()
-                )
-                .logout((logout) -> logout.permitAll());
+//    @Bean
+//    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+//        return authenticationConfiguration.getAuthenticationManager();
+//    }
 
-        return http.build();
-    }
-
-    @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
-        return authenticationConfiguration.getAuthenticationManager();
-    }
-
-    @Bean
-    PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder(8);
-    }
+//    @Bean
+//    PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder(8);
+//    }
 
     @Bean
     public RestTemplate restTemplate() {

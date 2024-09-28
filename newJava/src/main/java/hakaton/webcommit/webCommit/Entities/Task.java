@@ -26,7 +26,4 @@ public class Task {
 
     @Column(name = "end_time")
     private LocalDateTime endDate;
-
-
-
 }

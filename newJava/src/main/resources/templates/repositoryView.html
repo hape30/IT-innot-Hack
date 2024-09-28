@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Repository Viewer</title>
+</head>
+<body>
+<h1>Содержимое репозитория</h1>
+<ul>
+    <li th:each="item : ${items}">
+        <span th:if="${item.startsWith('Folder:')}" th:text="${item}"></span>
+        <span th:if="${item.startsWith('File:')}" th:text="${item}"></span>
+
+        <!-- Если это папка, создаём ссылку для перехода внутрь -->
+        <a th:if="${item.startsWith('Folder:')}"
+           th:href="@{'/view-repository/' + ${projectId} + '/' + ${branch} + '/' + ${item.substring(8)} }">Открыть</a>
+
+        <!-- Если это файл, создаём ссылку для просмотра файла -->
+        <a th:if="${item.startsWith('File:')}"
+           th:href="@{'/repositories/' + ${projectId} + '/files/' + ${item.substring(6)} + '/branch/' + ${branch} }">Смотреть файл</a>
+    </li>
+</ul>
+
+<!-- Добавляем ссылку для возвращения в корневую директорию -->
+<a th:href="@{'/view-repository/' + ${projectId} + '/' + ${branch} }">Вернуться в корень</a>
+</body>
+</html>

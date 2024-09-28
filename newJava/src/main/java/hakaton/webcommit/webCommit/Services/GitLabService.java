@@ -7,6 +7,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.StandardCharsets;
@@ -16,7 +17,7 @@ import java.util.List;
 @Service
 public class GitLabService {
     private static final String GITLAB_API_URL = "https://gitlab.com/api/v4";
-    private static final String ACCESS_TOKEN = "as";
+    private static final String ACCESS_TOKEN = "token";
 
     //@Autowired private RestTemplate restTemplate;
 
@@ -106,4 +107,38 @@ public class GitLabService {
             return ""; // Возвращаем пустую строку в случае ошибки
         }
     }
+
+
+    public String commitFileToRepository(String projectId, String branch, String filePath, String commitMessage, String fileContent) {
+        try {
+
+            String encodedFilePath = java.net.URLEncoder.encode(filePath, StandardCharsets.UTF_8);
+
+            // URL для коммита в GitLab API
+            String url = String.format("%s/projects/%s/repository/commits", GITLAB_API_URL, projectId);
+
+            // Создаем JSON тело запроса с параметрами коммита
+            String requestBody = String.format(
+                    "{\"branch\": \"%s\", \"commit_message\": \"%s\", \"actions\": [{\"action\": \"update\", \"file_path\": \"%s\", \"content\": \"%s\"}]}",
+                    branch, commitMessage, encodedFilePath, fileContent
+            );
+
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("PRIVATE-TOKEN", ACCESS_TOKEN);
+            headers.set("Content-Type", "application/json");
+
+
+            HttpEntity<String> entity = new HttpEntity<>(requestBody, headers);
+            ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+
+            return response.getBody();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Ошибка при создании коммита: " + e.getMessage();
+        }
+    }
+
+
+
 }
