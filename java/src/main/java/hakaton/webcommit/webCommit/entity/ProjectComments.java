@@ -2,10 +2,13 @@ package hakaton.webcommit.webCommit.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "Task")
-@Data
 public class ProjectComments {
     @Id
     @Column(name = "id")

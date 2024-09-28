@@ -2,12 +2,15 @@ package hakaton.webcommit.webCommit.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "Project")
-@Data
 public class Project {
     @Id
     @Column(name = "id")
@@ -17,11 +20,8 @@ public class Project {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "start_date")
-    private LocalDateTime startDate;
-
-    @Column(name = "end_date")
-    private LocalDateTime endDate;
+    @Column(name = "creation_date")
+    private LocalDateTime creationDate;
 
     @Column(name = "description")
     private String description;
@@ -31,4 +31,8 @@ public class Project {
 
     @Column(name = "repository")
     private String repository;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
 }

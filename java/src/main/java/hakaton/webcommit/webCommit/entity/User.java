@@ -3,6 +3,8 @@ package hakaton.webcommit.webCommit.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -10,9 +12,10 @@ import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "App_user")
-@Data
 public class User implements UserDetails {
     @Id
     @Column(name = "id")
@@ -36,6 +39,10 @@ public class User implements UserDetails {
 //            joinColumns = @JoinColumn(name = "user_id"))
 //    @Enumerated(EnumType.STRING)
 //    private Set<Role> roles = new HashSet<>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
 
     private LocalDateTime dateOfCreate;
 
