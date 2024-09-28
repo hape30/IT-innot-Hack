@@ -12,7 +12,7 @@ import jakarta.mail.util.StreamProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
-//import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.security.Principal;
@@ -23,8 +23,8 @@ import java.security.Principal;
 public class UserService {
     @Autowired
     private final UserRepository userRepository;
-    //@Autowired
-    //private final PasswordEncoder passwordEncoder;
+    @Autowired
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
     EmailService emailService;
@@ -36,7 +36,7 @@ public class UserService {
     public boolean createUser(User user){
         String email = user.getEmail();
         if (userRepository.findByEmail(email) != null) return false;
-        //user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         log.info("saving new user with email: {}", email);
         userRepository.save(user);
 

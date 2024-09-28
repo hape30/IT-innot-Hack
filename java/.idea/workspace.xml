@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="821d4cc9-0c64-4985-8c46-3d5f3118d157" name="Changes" comment="adding Models, Security and Email System">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Configurations/MailConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Configurations/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Controllers/GitLabController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/ConfirmationToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/Enums/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/ProjectComments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Models/Branch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Models/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Models/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Repositories/ConfirmationTokenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Services/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Services/GitLabService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/Services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hakaton/webcommit/webCommit/WebCommitApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hakaton/webcommit/webCommit/WebCommitApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2mf5B68iOha2CZzlHrXuYT2jN5h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.WebCommitApplication.executor": "Run",
+    "git-widget-placeholder": "GITLAB2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dmitr/IdeaProjects/webCommit/newJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dmitr\IdeaProjects\webCommit\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebCommitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="webCommit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hakaton.webcommit.webCommit.WebCommitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="821d4cc9-0c64-4985-8c46-3d5f3118d157" name="Changes" comment="" />
+      <created>1727454652087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727454652087</updated>
+      <workItem from="1727454653181" duration="6236000" />
+      <workItem from="1727464305776" duration="15224000" />
+    </task>
+    <task id="LOCAL-00001" summary="adding Models, Security and Email System">
+      <option name="closed" value="true" />
+      <created>1727461683114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727461683114</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding Models, Security and Email System" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Models, Security and Email System" />
+  </component>
+</project>

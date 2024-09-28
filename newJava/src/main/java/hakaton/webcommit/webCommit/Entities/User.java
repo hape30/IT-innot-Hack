@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "User")
+@Table(name = "users")
 @Data
 public class User implements UserDetails {
     @Id
@@ -32,6 +32,7 @@ public class User implements UserDetails {
 
     @Column(name = "active")
     private boolean active;
+
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role",
