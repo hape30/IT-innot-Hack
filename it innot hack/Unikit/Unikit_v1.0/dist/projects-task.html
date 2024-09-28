@@ -19,7 +19,7 @@
 
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/logo_blue3.png">
 
 
 
@@ -38,22 +38,22 @@
     <div class="brand">
         <a href="index.html" class="logo">
                     <span>
-                        <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        <img src="assets/images/logo_blue3.png"  class="logo-sm">
                     </span>
             <span>
-                        <img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
-                        <img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+                        <img src="assets/images/logo.png"  class="logo-lg logo-light">
+                        <img src="assets/images/logo-dark.png"  class="logo-lg logo-dark">
                     </span>
         </a>
     </div>
     <div class="sidebar-user-pro media border-end">
         <div class="position-relative mx-auto">
-            <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle thumb-md">
+            <img src="assets\images\users\cat.jpg" alt="user" class="rounded-circle thumb-md">
             <span class="online-icon position-absolute end-0"><i class="mdi mdi-record text-success"></i></span>
         </div>
         <div class="media-body ms-2 user-detail align-self-center">
-            <h5 class="font-14 m-0 fw-bold">Mr. Michael Hill </h5>
-            <p class="opacity-50 mb-0">michael.hill@exemple.com</p>
+            <h5 class="font-14 m-0 fw-bold">Иванов Александр </h5>
+            <p class="opacity-50 mb-0">sasha2007.ivanov@mail.ru</p>
         </div>
     </div>
     <div class="border-end">
@@ -102,7 +102,7 @@
                         <a class="nav-link" href="#sidebarProjects" data-bs-toggle="collapse" role="button"
                            aria-expanded="false" aria-controls="sidebarProjects">
                             <i class="ti ti-brand-asana menu-icon"></i>
-                            <span>Projects</span>
+                            <span>Проекты</span>
                         </a>
                         <div class="collapse " id="sidebarProjects">
                             <ul class="nav flex-column">
@@ -116,7 +116,7 @@
                                     <a class="nav-link" href="projects-team.html">Team</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="projects-project.html">Project</a>
+                                    <a class="nav-link" href="projects-project.html">Проекты</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
                                     <a class="nav-link" href="projects-task.html">Task</a>
@@ -127,9 +127,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="projects-chat.html">Chat</a>
                                 </li><!--end nav-item-->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects-users.html">Users</a>
-                                </li><!--end nav-item-->
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="projects-create.html">Project Create</a>
                                 </li><!--end nav-item-->
@@ -180,15 +178,11 @@
     <nav class="navbar-custom" id="navbar-custom">
         <ul class="list-unstyled topbar-nav float-end mb-0">
             <li class="dropdown">
-                <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="false" aria-expanded="false">
-                    <img src="assets/images/flags/us_flag.jpg" alt="" class="thumb-xxs rounded">
+
+
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"><img src="assets/images/flags/us_flag.jpg" alt="" height="15" class="me-2">English</a>
-                    <a class="dropdown-item" href="#"><img src="assets/images/flags/spain_flag.jpg" alt="" height="15" class="me-2">Spanish</a>
-                    <a class="dropdown-item" href="#"><img src="assets/images/flags/germany_flag.jpg" alt="" height="15" class="me-2">German</a>
-                    <a class="dropdown-item" href="#"><img src="assets/images/flags/french_flag.jpg" alt="" height="15" class="me-2">French</a>
+
                 </div>
             </li><!--end topbar-language-->
 
@@ -365,10 +359,10 @@
                 <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
                    aria-haspopup="false" aria-expanded="false">
                     <div class="d-flex align-items-center">
-                        <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                        <img src="assets\images\users\cat.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
                         <div>
-                            <small class="d-none d-md-block font-11">Admin</small>
-                            <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i
+                            <small class="d-none d-md-block font-11">админ</small>
+                            <span class="d-none d-md-block fw-semibold font-12">Иванов Александр <i
                                     class="mdi mdi-chevron-down"></i></span>
                         </div>
                     </div>
@@ -600,12 +594,7 @@
 
 <!--Start Footer-->
 <!-- Footer Start -->
-<footer class="footer text-center text-sm-start">
-    &copy; <script>
-    document.write(new Date().getFullYear())
-</script> Unikit <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
-        class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
-</footer>
+
 <!-- end Footer -->
 <!--end footer-->
 </div>
@@ -614,7 +603,185 @@
 <!-- end page-wrapper -->
 
 <!-- Javascript  -->
+<title>Компилятор</title>
 
+<!-- Подключение CSS CodeMirror -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/dracula.min.css"> <!-- Тема (по желанию) -->
+
+<!-- Стили для основного контента -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .content-container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    #editor {
+        height: 400px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    #output {
+        padding: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #ccc;
+        min-height: 100px;
+    }
+</style>
+
+
+
+<!-- Ваш основной контент -->
+<div class="content-container">
+    <h1>Компилятор</h1>
+
+    <!-- Выбор языка -->
+    <div style="text-align: center;">
+        <label for="language">Choose Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="htmlmixed">HTML/XML</option>
+            <option value="css">CSS</option>
+            <option value="php">PHP</option>
+            <option value="ruby">Ruby</option>
+            <option value="clike">Java</option>
+        </select>
+    </div>
+
+    <!-- Div для редактора CodeMirror -->
+    <div id="editor"></div>
+
+    <!-- Кнопки -->
+    <div class="buttons">
+        <button class="btn" onclick="runCode()">Run</button>
+        <button class="btn" onclick="clearOutput()">Clear Output</button>
+    </div>
+
+    <!-- Вывод результата -->
+    <h2>Output:</h2>
+    <div id="output"></div>
+</div>
+
+<!-- Подключение библиотек CodeMirror и скриптов -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/python/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/php/php.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/ruby/ruby.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/clike/clike.min.js"></script>
+
+<!-- Скрипт для настройки CodeMirror -->
+<script>
+    var editor;
+
+    // Инициализация редактора CodeMirror после полной загрузки страницы
+    document.addEventListener("DOMContentLoaded", function() {
+        editor = CodeMirror(document.getElementById("editor"), {
+            mode: "javascript",  // Устанавливаем язык подсветки по умолчанию
+            lineNumbers: true,   // Показываем номера строк
+            theme: "dracula",    // Тема (по желанию)
+            lineWrapping: true,  // Перенос строк
+            viewportMargin: Infinity, // Чтобы редактор всегда занимал максимальную высоту
+        });
+    });
+
+    // Функция для изменения языка подсветки
+    function changeLanguage() {
+        var language = document.getElementById('language').value;
+        var mode = '';
+
+        switch(language) {
+            case 'javascript':
+                mode = 'javascript';
+                break;
+            case 'python':
+                mode = 'python';
+                break;
+            case 'htmlmixed':
+                mode = 'htmlmixed';
+                break;
+            case 'css':
+                mode = 'css';
+                break;
+            case 'php':
+                mode = 'php';
+                break;
+            case 'ruby':
+                mode = 'ruby';
+                break;
+            case 'clike':
+                mode = 'text/x-java';
+                break;
+        }
+
+        editor.setOption("mode", mode);
+    }
+
+    // Функция для выполнения кода
+    function runCode() {
+        var code = editor.getValue();  // Получаем код из редактора
+        var output = document.getElementById('output');  // Элемент для вывода
+
+        // Очищаем предыдущий вывод
+        output.innerHTML = '';
+
+        // Если выбранный язык - JavaScript, пытаемся выполнить код
+        if (editor.getOption("mode") === "javascript") {
+            try {
+                var result = eval(code); // Выполняем код и выводим результат
+                output.innerHTML += '<p>' + result + '</p>';
+            } catch (error) {
+                output.innerHTML += '<p style="color: red;">Error: ' + error + '</p>';
+            }
+        } else {
+            output.innerHTML += '<p style="color: red;">Code execution is only supported for JavaScript.</p>';
+        }
+    }
+
+    // Функция для очистки вывода
+    function clearOutput() {
+        document.getElementById('output').innerHTML = '';
+    }
+</script>
 
 
 
