@@ -3,6 +3,7 @@ package hakaton.webcommit.webCommit.Configurations;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -47,11 +48,13 @@ public class SecurityConfig {
                 .authorizeHttpRequests(requests -> requests
                         .requestMatchers(AUTH_WHITELIST_PATHS).permitAll()
                         .anyRequest().authenticated())
-                .formLogin(form -> form
-                        .loginPage("/user/login").permitAll()
-                        .defaultSuccessUrl("/user"))
+                .oauth2Login(oauth2 -> oauth2.loginPage("/user/login").permitAll())
+//                .formLogin(form -> form
+//                        .loginPage("/user/login").permitAll()
+//                        .defaultSuccessUrl("/user"))
                 .logout(logout -> logout
                         .logoutUrl("/user/logout").permitAll())
+
                 .build();
     }
 }
