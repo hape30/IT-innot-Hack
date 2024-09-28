@@ -24,8 +24,8 @@ public class GlobalExceptionHandler {
         );
     }
 
-    @ExceptionHandler(BookingException.class)
-    public ResponseEntity<ApplicationError> handleBookingException(BookingException e) {
+    @ExceptionHandler(TeamConflictException.class)
+    public ResponseEntity<ApplicationError> handleTeamConflictException(TeamConflictException e) {
         log.error(e.getMessage());
         return new ResponseEntity<>(
                 new ApplicationError(
@@ -60,15 +60,15 @@ public class GlobalExceptionHandler {
         );
     }
 
-    @ExceptionHandler(TokenExpiredException.class)
-    public ResponseEntity<ApplicationError> handleTokenExpiredException(TokenExpiredException e) {
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<ApplicationError> handleAccessDeniedException(AccessDeniedException e) {
         log.error(e.getMessage());
         return new ResponseEntity<>(
                 new ApplicationError(
-                        e.getCause().getMessage(),
-                        HttpStatus.CONFLICT.value()
+                        e.getMessage(),
+                        HttpStatus.FORBIDDEN.value()
                 ),
-                HttpStatus.CONFLICT
+                HttpStatus.FORBIDDEN
         );
     }
 }
